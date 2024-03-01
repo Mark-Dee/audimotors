@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            background-color: DodgerBlue;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgba(14, 209, 34, 1);
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid magenta;
+            border-radius: 10px;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: rgb(61, 213, 14);
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        textarea,
+        select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid magenta;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        select {
+            height: 40px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: magenta;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: darkmagenta;
+        }
+    </style>
+<head>
+</head>
+<body>
+    <h1>sign in to make a purchase today</h1>
+    <hr color="magenta" size="5">
+    
+    <form>
+        <fieldset>
+            <legend>My purchase form</legend>
+            <label for="name">Enter Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="Email">Enter email:</label>
+            <input type="emailadress" id="Email" name="Email">
+            <label for="idNo">Enter Password:</label>
+            <input type="password" id="idNo" name="idNo">
+		<p>
+		<label>which audi model would you wish to purchase fom us:</label>
+            <p>
+            <input type="checkbox" name="Angry" value="angry">A1
+            <p>
+            <input type="checkbox" name="Sad" value="sad">A3
+            <p>
+            <input type="checkbox" name="Happy" value="Happy">A4
+            <p>
+            <input type="checkbox" name="Ambivalent" value="ambivalent">A5
+            <p>
+            <input type="checkbox" name="Angry" value="angry">A6
+            <p>
+            <input type="checkbox" name="Sad" value="sad">A7
+            <p>
+            <input type="checkbox" name="Happy" value="Happy">A8
+            <p>
+            <input type="checkbox" name="Ambivalent" value="ambivalent">Q2
+            <p>
+            <input type="checkbox" name="Angry" value="angry">Q3
+            <p>
+            <input type="checkbox" name="Sad" value="sad">Q4 E-TRON
+            <p>
+            <input type="checkbox" name="Happy" value="Happy">Q5
+            <p>
+            <input type="checkbox" name="Ambivalent" value="ambivalent">Q7
+            <p>
+            <input type="checkbox" name="Angry" value="angry">Q8
+            <p>
+            <input type="checkbox" name="Sad" value="sad">Q8 E-TRON
+            <p>
+            <input type="checkbox" name="Happy" value="Happy">R8
+            <p>
+            <input type="checkbox" name="Ambivalent" value="ambivalent">TT
+        <p>
+            <label for="description">please describe any further modification you would wish to apply to your car before delivery</label>
+            <textarea id="description" cols="30" rows="10">Type comments!!!</textarea>
+		<p>
+            <label>which of these locations would you wish us to deliver your car</label>
+            <select>
+                <option value="nkr">Nakuru</option>
+                <option value="nrb">Nairobi</option>
+                <option value="ksm">Kisumu</option>
+                <option value="mbs">Mombasa</option>
+                <option value="kiambu">Kiambu</option>
+            </select>
+           
+		<p>
+	 	 <label for="fileUpload">upload your passport photo here please</label>
+		  <p><input type="file" id="fileUpload" name="fileupload" accept="image/*">
+    
+            <p><input type="submit" name="submit" value="Submit">
+            <input type="reset" name="reset" value="Reset">
+            <input type="hidden" name="pagename" value="10">
+        </fieldset>
+    </form>
+</body>
+</html>

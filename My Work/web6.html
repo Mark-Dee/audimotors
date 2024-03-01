@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            background-color: DodgerBlue;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgba(14, 209, 34, 1);
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid magenta;
+            border-radius: 10px;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: rgb(61, 213, 14);
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        textarea,
+        select {
+            width: calc(100% - 10px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid magenta;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        select {
+            height: 100px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: magenta;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: darkmagenta;
+        }
+    </style>
+<head> my feedback
+</head>
+<body>
+    <h1>audi motors</h1>
+    <hr color="magenta" size="5">
+    
+    <form>
+        <fieldset>
+            <legend>MY FEEDBACK FORM</legend>
+            <label for="name">Enter Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="Email">Enter email:</label>
+            <input type="emailadress" id="Email" name="Email">
+            <label for="idNo">Enter Password:</label>
+            <input type="password" id="idNo" name="idNo">
+		<p>
+		<label>What are your emotional outcome from our services:</label>
+            <p>
+            <input type="checkbox" name="Angry" value="angry">Angry
+            <p>
+            <input type="checkbox" name="Sad" value="sad">Sad
+            <p>
+            <input type="checkbox" name="Happy" value="Happy">Happy
+            <p>
+            <input type="checkbox" name="Ambivalent" value="ambivalent">Ambivalent
+		<p>
+            <label>how satisfied were you with our service:</label>
+            <p>
+            <input type="radio" name="very satisfied" value="very satisfied">very satisfied
+            <p>
+            <input type="radio" name="satisfied" value="satisfied">satisfied
+            <p>
+            <input type="radio" name="didnt care" value="didnt care">didnt care
+            <p>
+            <input type="radio" name="disatisfied" value="disatisfied">disatisfied
+            <p>
+            <input type="radio" name="very disatisfied" value="very disatisfied">very disatisfied
+        <p>
+            <label for="description">please give us futher comments concerning our services to you</label>
+            <textarea id="description" cols="30" rows="10">Type comments!!!</textarea>
+		<p>
+            <label>which one of our branches did you visit</label>
+            <select>
+                <option value="nkr">Nakuru</option>
+                <option value="nrb">Nairobi</option>
+                <option value="ksm">Kisumu</option>
+                <option value="mbs">Mombasa</option>
+                <option value="kiambu">Kiambu</option>
+            </select>
+               
+            <p><input type="submit" name="submit" value="Submit">
+            <input type="reset" name="reset" value="Reset">
+            <input type="hidden" name="pagename" value="10">
+        </fieldset>
+    </form>
+</body>
+</html>
